@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostListVC">
+            <connections>
+                <outlet property="containerView" destination="PDw-al-uL5" id="63m-6O-NUy"/>
+                <outlet property="tableView" destination="SVX-B5-SUK" id="aco-kX-Sve"/>
+                <outlet property="view" destination="ysk-vm-MKq" id="lHS-uP-Q41"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ysk-vm-MKq">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_dashboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-fc-NGG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkk-qJ-nXh">
+                    <rect key="frame" x="12" y="0.0" width="308" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU6-dg-LKe">
+                            <rect key="frame" x="0.0" y="23" width="100" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="2xb-O7-aFE"/>
+                                <constraint firstAttribute="height" constant="36" id="n4Q-7r-nyb"/>
+                            </constraints>
+                            <state key="normal" image="bt_back_pl">
+                                <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionPostBack:" destination="-1" eventType="touchUpInside" id="Xga-59-KcH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="7xe-mT-q1g"/>
+                        <constraint firstAttribute="bottom" secondItem="BU6-dg-LKe" secondAttribute="bottom" constant="5" id="IPw-bY-ati"/>
+                        <constraint firstItem="BU6-dg-LKe" firstAttribute="leading" secondItem="Mkk-qJ-nXh" secondAttribute="leading" id="O8O-Cu-Hho"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDw-al-uL5">
+                    <rect key="frame" x="12" y="64" width="308" height="504"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SVX-B5-SUK">
+                            <rect key="frame" x="0.0" y="0.0" width="308" height="504"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="H0t-Ln-C8c"/>
+                                <outlet property="delegate" destination="-1" id="e5R-K6-fmn"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="SVX-B5-SUK" firstAttribute="leading" secondItem="PDw-al-uL5" secondAttribute="leading" id="K9R-O1-VlE"/>
+                        <constraint firstAttribute="trailing" secondItem="SVX-B5-SUK" secondAttribute="trailing" id="Tdy-ip-irT"/>
+                        <constraint firstItem="SVX-B5-SUK" firstAttribute="top" secondItem="PDw-al-uL5" secondAttribute="top" id="py6-bi-fNC"/>
+                        <constraint firstAttribute="bottom" secondItem="SVX-B5-SUK" secondAttribute="bottom" id="yYG-wA-kxs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PDw-al-uL5" firstAttribute="top" secondItem="Mkk-qJ-nXh" secondAttribute="bottom" id="11y-oS-WUW"/>
+                <constraint firstAttribute="trailing" secondItem="PDw-al-uL5" secondAttribute="trailing" id="AzW-Th-hXT"/>
+                <constraint firstAttribute="trailing" secondItem="aBA-fc-NGG" secondAttribute="trailing" id="K5X-9u-9hj"/>
+                <constraint firstItem="aBA-fc-NGG" firstAttribute="top" secondItem="ysk-vm-MKq" secondAttribute="top" id="MuI-6F-zHN"/>
+                <constraint firstAttribute="trailing" secondItem="Mkk-qJ-nXh" secondAttribute="trailing" id="dbZ-Ak-dcg"/>
+                <constraint firstItem="aBA-fc-NGG" firstAttribute="leading" secondItem="ysk-vm-MKq" secondAttribute="leading" id="e7R-YD-hG7"/>
+                <constraint firstItem="Mkk-qJ-nXh" firstAttribute="leading" secondItem="ysk-vm-MKq" secondAttribute="leading" constant="12" id="hhV-Yj-z1d"/>
+                <constraint firstItem="Mkk-qJ-nXh" firstAttribute="top" secondItem="ysk-vm-MKq" secondAttribute="top" id="qHd-1H-R6v"/>
+                <constraint firstAttribute="bottom" secondItem="PDw-al-uL5" secondAttribute="bottom" id="uaN-Yh-846"/>
+                <constraint firstItem="PDw-al-uL5" firstAttribute="leading" secondItem="ysk-vm-MKq" secondAttribute="leading" constant="12" id="xmb-Tg-jul"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="225" y="241"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_dashboard.png" width="640" height="1136"/>
+        <image name="bt_back_pl" width="89" height="22"/>
+    </resources>
+</document>

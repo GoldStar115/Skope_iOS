@@ -1,0 +1,161 @@
+PODS:
+  - ADTransitionController (1.1.1)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AsyncDisplayKit (1.2.3):
+    - AsyncDisplayKit/ASDealloc2MainObject (= 1.2.3)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.2.3)
+  - BLKFlexibleHeightBar (1.0.2)
+  - Bolts (1.3.0):
+    - Bolts/AppLinks (= 1.3.0)
+    - Bolts/Tasks (= 1.3.0)
+  - Bolts/AppLinks (1.3.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.3.0)
+  - Crashlytics (3.3.4)
+  - DACircularProgress (2.3.1)
+  - Fabric (1.5.5):
+    - Fabric/Base (= 1.5.5)
+  - Fabric/Base (1.5.5)
+  - FBSDKCoreKit (4.5.1):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.5.1)
+    - FBSDKCoreKit/no-arc (= 4.5.1)
+  - FBSDKCoreKit/arc (4.5.1):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.5.1):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.5.1):
+    - FBSDKCoreKit
+  - IOSLinkedInAPI (2.0.0):
+    - AFNetworking (>= 2.0.0)
+  - ISDiskCache (0.1.3)
+  - JFMinimalNotifications (0.0.5)
+  - MBProgressHUD (0.9.1)
+  - MTBlockAlertView (0.1.1)
+  - MWPhotoBrowser (1.4.1):
+    - DACircularProgress
+    - MBProgressHUD (~> 0.8)
+    - PSTCollectionView (~> 1.2)
+    - SDWebImage (~> 3.7)
+  - NSDate+TimeAgo (1.0.3)
+  - Parse (1.8.5):
+    - Bolts/Tasks (>= 1.2.2)
+  - ParseFacebookUtilsV4 (1.8.5):
+    - Bolts/Tasks (>= 1.2.2)
+    - FBSDKCoreKit (~> 4.0)
+    - FBSDKLoginKit (~> 4.0)
+    - Parse (~> 1.8.4)
+  - ParseUI (1.1.6):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
+  - PHFComposeBarView (2.0.2):
+    - PHFDelegateChain (~> 1.0)
+  - PHFDelegateChain (1.0.1)
+  - pop (1.0.8)
+  - PSTCollectionView (1.2.3)
+  - QBImagePickerController (2.5.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1.3)
+  - SVWebViewController (1.0)
+  - TTTAttributedLabel (1.13.4)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - WebASDKImageManager (1.0.1):
+    - AsyncDisplayKit (~> 1.1)
+    - SDWebImage/Core (~> 3.7)
+
+DEPENDENCIES:
+  - ADTransitionController
+  - AFNetworking
+  - AsyncDisplayKit
+  - BLKFlexibleHeightBar
+  - Crashlytics
+  - Fabric
+  - FBSDKCoreKit (~> 4.5.1)
+  - FBSDKLoginKit (~> 4.5.1)
+  - IOSLinkedInAPI (from `https://github.com/jeyben/IOSLinkedInAPI`, commit `7b777b16867c713ed660c1d3711f83b76388ea99`)
+  - ISDiskCache
+  - JFMinimalNotifications (~> 0.0.4)
+  - MTBlockAlertView (~> 0.1)
+  - MWPhotoBrowser (~> 1.4)
+  - NSDate+TimeAgo (~> 1.0)
+  - Parse
+  - ParseFacebookUtilsV4 (~> 1.8.5)
+  - ParseUI
+  - PHFComposeBarView (~> 2.0)
+  - pop
+  - QBImagePickerController (~> 2.5.2)
+  - SDWebImage (~> 3.7)
+  - SVProgressHUD (~> 1.1)
+  - SVWebViewController
+  - TTTAttributedLabel (~> 1.13)
+  - UIActivityIndicator-for-SDWebImage (~> 1.2)
+  - WebASDKImageManager
+
+EXTERNAL SOURCES:
+  IOSLinkedInAPI:
+    :commit: 7b777b16867c713ed660c1d3711f83b76388ea99
+    :git: https://github.com/jeyben/IOSLinkedInAPI
+
+CHECKOUT OPTIONS:
+  IOSLinkedInAPI:
+    :commit: 7b777b16867c713ed660c1d3711f83b76388ea99
+    :git: https://github.com/jeyben/IOSLinkedInAPI
+
+SPEC CHECKSUMS:
+  ADTransitionController: 72299d31488bcbe59fb87c483a89a637ebc819f8
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  AsyncDisplayKit: 5c8f38225f7478e39c48196cec0dd0d2ac3455ed
+  BLKFlexibleHeightBar: b27572a69633d8e33f1f2bbc486b04d8e86f742d
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
+  FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
+  FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
+  IOSLinkedInAPI: d0adc664472d471b0df9b2aad92a2d82de926c40
+  ISDiskCache: 83d1b6ca5c2f5f2d14832ae1e9fcd6e20de43142
+  JFMinimalNotifications: c0d1eba2b826c1599416880dd48059c9153a6d9a
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MTBlockAlertView: 6a37bcf0fc677da69e0c3457be41bb1eb2415484
+  MWPhotoBrowser: 2531e682860d62b8a7ba8659de02eb9040e431e5
+  NSDate+TimeAgo: 416f55d2696d3744c313091c5a9280d47f8238fe
+  Parse: 17ad8e0677ed682f7f00503860fcda0f4eb74168
+  ParseFacebookUtilsV4: cc51857cf984c6fc743e7f17c2ddebdb6f02f963
+  ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
+  PHFComposeBarView: 758c73ce54be681df97223bc61543dd8828ae0d3
+  PHFDelegateChain: 491f9cd8a3fb8761f390ff05f74a0e168d48d285
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  PSTCollectionView: 6749df92885353521f55279a7ce2b293762e2be4
+  QBImagePickerController: 96c2e340edb7fcac5acf21b72314fac9201ffb8e
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  WebASDKImageManager: 8e37e97c115c8e9092fc6111218a71ddec7a73d5
+
+COCOAPODS: 0.38.2

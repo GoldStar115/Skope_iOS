@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SinglePostVC">
+            <connections>
+                <outlet property="containerView" destination="bqS-WY-vbV" id="UxS-h4-GZ1"/>
+                <outlet property="tableView" destination="tkO-Sz-Jdb" id="ief-1j-Nd2"/>
+                <outlet property="view" destination="wYb-R1-bN5" id="JHp-PM-Ide"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wYb-R1-bN5">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqS-WY-vbV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tkO-Sz-Jdb">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Fcm-DV-Q5U"/>
+                                <outlet property="delegate" destination="-1" id="olE-J5-iYN"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.92156862750000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="tkO-Sz-Jdb" firstAttribute="top" secondItem="bqS-WY-vbV" secondAttribute="top" id="4zv-8o-3Nm"/>
+                        <constraint firstAttribute="bottom" secondItem="tkO-Sz-Jdb" secondAttribute="bottom" id="ESn-FB-ZnT"/>
+                        <constraint firstItem="tkO-Sz-Jdb" firstAttribute="leading" secondItem="bqS-WY-vbV" secondAttribute="leading" id="IDb-02-N8n"/>
+                        <constraint firstAttribute="trailing" secondItem="tkO-Sz-Jdb" secondAttribute="trailing" id="XVk-HY-fsm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bqS-WY-vbV" firstAttribute="leading" secondItem="wYb-R1-bN5" secondAttribute="leading" id="DFh-lB-g6w"/>
+                <constraint firstAttribute="trailing" secondItem="bqS-WY-vbV" secondAttribute="trailing" id="LPO-9T-71I"/>
+                <constraint firstItem="bqS-WY-vbV" firstAttribute="top" secondItem="wYb-R1-bN5" secondAttribute="top" id="kax-hZ-4LC"/>
+                <constraint firstAttribute="bottom" secondItem="bqS-WY-vbV" secondAttribute="bottom" id="wuA-Ou-ukZ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="225" y="241"/>
+        </view>
+    </objects>
+</document>
